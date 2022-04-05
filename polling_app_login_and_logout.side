@@ -1,0 +1,70 @@
+{
+  "id": "0e05053d-77d6-47e7-a14f-5e117a664d73",
+  "version": "2.0",
+  "name": "Polling App",
+  "url": "http://poll-app5-20220113.softacad.bg/login",
+  "tests": [{
+    "id": "9db8aa11-2ec8-4774-b3fa-83f01540587f",
+    "name": "Untitled",
+    "commands": [{
+      "id": "50c1bf34-6a0f-4f5b-98e5-c1bdba1dfe75",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75b36450-a6ac-4b37-b2eb-265d60ca4b49",
+      "comment": "",
+      "command": "type",
+      "target": "usernameOrEmail",
+      "targets": [],
+      "value": "Rado"
+    }, {
+      "id": "68ed7e8b-42bd-4c66-9bf9-40994328104f",
+      "comment": "",
+      "command": "type",
+      "target": "password",
+      "targets": [],
+      "value": "123456"
+    }, {
+      "id": "034886d6-afd5-42cc-b214-dbc68450d133",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "640af089-5f54-48d5-93fc-3dbd33641291",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"navbarSupportedContent\"]/ul/li[3]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c501ae7c-56b1-417a-b062-a5a917c11541",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//*[@id=\"full-name\"]",
+      "targets": [],
+      "value": "Radoslav Naumov"
+    }, {
+      "id": "a91bff8b-d51e-4d94-9d1f-c7e5ea2ca2b0",
+      "comment": "",
+      "command": "click",
+      "target": "name=logout-button",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "342f9ddc-3d38-40ae-a7e6-5b329fa39227",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9db8aa11-2ec8-4774-b3fa-83f01540587f"]
+  }],
+  "urls": ["http://poll-app5-20220113.softacad.bg/", "http://poll-app5-20220113.softacad.bg/login"],
+  "plugins": []
+}
